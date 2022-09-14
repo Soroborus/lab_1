@@ -35,13 +35,26 @@ public class Main {
     System.out.println("Sum = "+s);
     System.out.println("average = "+(float)s/n);
 
-    //5
-    System.out.println(args.length);
-    for (String str:args){
-        System.out.println(str);
+    //6
+    for (i=1;i<=10;i++){
+        String str= String.format("%.2f",(double)1/i);
+        System.out.print(str+" ");
+    }
+    System.out.println("");
+
+    double t = factorial(5);
+    System.out.println(t);
+
     }
 
-
-
+    //7
+    public static double factorial(double n){
+        double s=1;
+        while (n>0){
+            s*=n;
+            n--;
+        }
+        n=s;
+        return s;
     }
 }
